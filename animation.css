@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 100px;
+    justify-content: space-between;
+    
+}
+.box{
+    height: 250px;
+    width: 18%;
+    display: flex;
+    background-color: blueviolet;
+    border-radius: 14px;
+    /* box-shadow: 5px 5px 10px gray; */
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all .7s ease-out .2s;
+}
+.box:hover{
+background-color: rgba(127, 255, 212, 0.5);
+transform: scale(3) rotate(-90deg);
+
+/* transform: rotate(90deg);  */
+
+}
+body{
+    background-color: black;
+}
