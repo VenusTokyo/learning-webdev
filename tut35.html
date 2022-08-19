@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables custom properties</title>
+    <style>
+        :root{
+            --primary-color:rgb(245, 56, 144);
+            --danger-color:lightgreen; 
+            --maxw: 233px;
+            /* these will act like global variables  */
+        }
+.box{
+    /* --box-color: rgb(255, 0, 191); */
+    /* the scope of this variable is within this class ie box  */
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--danger-color);
+    margin: 2px 9px;
+
+}
+.container{
+    display: flex;
+align-items: center;
+justify-content: center;
+max-width: var(--maxw);
+background-color: var(--danger-color);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

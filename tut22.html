@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectorsa and designing</title>
+    <style>
+.container{
+    border: 3px solid crimson;
+    background-color: lightgreen;
+    padding: 34px;
+    margin: 34px auto;
+    width: 666px;
+}
+
+a{
+    text-decoration: none;
+    /* this is special decoration for links. ie underline which is disabled here  */
+    color: black;
+}
+
+a:hover{
+    color: mediumblue;
+    background-color: yellow;
+}
+/* this is for when we take the cursor over the element  */
+a:visited{
+   background-color: turquoise;
+}
+/* styling for visited link  */
+a:active{
+    background-color: violet;
+}
+/* styling for when the link is clicked  */
+.btn{
+    background-color: lightsalmon;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+}
+.btn:hover{
+    background-color: turquoise;
+    border: 2px solid black;
+}
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>this is a heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae, impedit facere doloribus nesciunt labore corporis fuga temporibus expedita tempora laborum? Ullam ipsam sit, aspernatur vel, porro in eligendi sint corporis nam a optio autem.</p>
+        <a href="https://google.com" class="btn">Read More</a>
+        <button class="btn">contact us</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+
+    <style>
+        /* * is used when we have to apply something to all elements this is a universeal selector  */
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+body{
+    background-color: rgb(220, 159, 255);
+}
+        .container {
+            background-color: chartreuse;
+            border: 3px solid rgb(61, 49, 231);
+            /* we can set padding for left right top bottom like this  */
+            /* padding-left: 78px; */
+
+            padding: 24px 6px 20px 14px;
+            /* if we have to give diffrend padding for all directions it can be written as above  */
+            /* padding: top right bottom left;   (can be remembered as trbl )*/
+
+            padding: 16px 20px;
+            /* if we have to give same padding for top and bottom and left and right we write like give above 
+            padding: top/bottom left/right */
+            /* padding: 69px; */
+            margin: 34px 24px;
+            border-radius: 18px;
+            width: 300px;
+            box-sizing: border-box;
+
+            /* even if we set a width, if we increse the padding the width will change, if we don want it to happen we set the box sizing to border box  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h3>This is a heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci optio tempora sequi quod autem
+            nostrum fuga, soluta quisquam reiciendis enim placeat tenetur, maxime sapiente laborum sit possimus dicta
+            doloribus natus in iusto? Ut, soluta alias.</p>
+    </div>
+
+    <div class="container">
+
+        <h3>This is a heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci optio tempora sequi quod autem
+            nostrum fuga, soluta quisquam reiciendis enim placeat tenetur, maxime sapiente laborum sit possimus dicta
+            doloribus natus in iusto? Ut, soluta alias.</p>
+    </div>
+
+    <div class="container">
+
+        <h3>This is a heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci optio tempora sequi quod autem
+            nostrum fuga, soluta quisquam reiciendis enim placeat tenetur, maxime sapiente laborum sit possimus dicta
+            doloribus natus in iusto? Ut, soluta alias.</p>
+    </div>
+</body>
+
+</html>

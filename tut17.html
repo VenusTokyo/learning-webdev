@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS fonts</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap">
+
+    <!-- the above is imported from google fonts  -->
+    <style>
+        /* web safe fonts mean that they are available in most operating systems
+ */
+        /* some fonts arent available and have to be imported from outside are called web fonts  */
+        p {
+            font-family: 'Square Peg', cursive;
+            font-size: 40px;
+            /* 1/96th of an inch is a px*/
+            line-height: 1.4em;
+            /* em means the multiples of the regular font*/
+            /* the space between the line above */
+            /* can stack fonts as above */
+        }
+
+        span {
+            font-weight: bold;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS paragraphs</h2>
+    <p>this a pragraph <span>Lorem, ipsum dolor.</span> Lorem ipsum dolor sit.</p>
+</body>
+
+</html>

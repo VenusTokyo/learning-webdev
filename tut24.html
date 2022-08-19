@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: auto;
+            border: 2px solid red;
+            width: 1200px;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+            display: block;
+            margin: auto;
+        }
+
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: rgb(240, 170, 199);
+            margin: 0px;
+            padding: 3px 10px;
+            display: inline-block;
+            width: 33%;
+            /* we can set width to block elements and not to inline elements, but we can make them block. but what if we want the elemnt to position itself or occupy space like inline element and also get adjusted by width we use inline block property  */
+
+            /* width changes according to margin and padding if we want the width as per our wish then we give box sizing border box  */
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://i.pinimg.com/564x/e9/e2/78/e9e2787d0cb55d570fe1c76843506759.jpg" alt="">
+        <h3>Welcome my Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>hello</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum iure officia similique excepturi aliquam
+                dolores corporis sit voluptates a, deserunt asperiores consequatur, dignissimos placeat? Facilis, sunt
+                modi, ratione, temporibus illo impedit beatae iusto pariatur nobis aspernatur et est a possimus
+                distinctio! Iusto, odit tempore?</p>
+        </div>
+        <div class="box">
+            <h4>hello</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum iure officia similique excepturi aliquam
+                dolores corporis sit voluptates a, deserunt asperiores consequatur, dignissimos placeat? Facilis, sunt
+                modi, ratione, temporibus illo impedit beatae iusto pariatur nobis aspernatur et est a possimus
+                distinctio! Iusto, odit tempore?</p>
+        </div>
+        <div class="box">
+            <h4>hello</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum iure officia similique excepturi aliquam
+                dolores corporis sit voluptates a, deserunt asperiores consequatur, dignissimos placeat? Facilis, sunt
+                modi, ratione, temporibus illo impedit beatae iusto pariatur nobis aspernatur et est a possimus
+                distinctio! Iusto, odit tempore?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

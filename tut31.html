@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div li p {
+            color: aqua;
+            background-color: green;
+            /* this applies for any para graph inside div  */
+        }
+
+        .container>p {
+            background-color: blue;
+            /* this is for selecting a p that is direct child of container   */
+        }
+
+        div+p {
+            color: aliceblue;
+            background-color: black;
+            /* this is for selecting a p which is the sibiling of div ie they share a same parent */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is More on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is paragraph of li</p>
+                </li>
+
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outer paragraph</p>
+</body>
+
+</html>

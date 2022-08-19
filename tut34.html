@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shado</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 24px 24px;
+            /* border: 2px solid red; */
+            margin: 24px 12px;
+            background-color: aquamarine;
+            /* box-shadow: xpx ypx blur-radius spread-radius color; */
+            /* negative values for shadow in oppposite direction ; */
+            box-shadow: 7px 7px 10px 4px rgba(0, 64, 238, 0.5);
+            /* for show inside the box  */
+            box-shadow: inset 2px 2px rebeccapurple;
+            /* for multiple shadows */
+            box-shadow: 4px 4px red, 8px 8px blue;
+        }
+        .card h2{
+            text-shadow: 2px 2px rgb(180 193 183);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas et iste obcaecati, culpa quisquam
+                ad quidem autem. Molestias labore cupiditate ad quo autem. Asperiores cupiditate necessitatibus soluta
+                voluptatum labore consectetur perspiciatis! Nulla, reprehenderit.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>this is bakwass</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas et iste obcaecati, culpa quisquam
+                ad quidem autem. Molestias labore cupiditate ad quo autem. Asperiores cupiditate necessitatibus soluta
+                voluptatum labore consectetur perspiciatis! Nulla, reprehenderit.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas et iste obcaecati, culpa quisquam
+                ad quidem autem. Molestias labore cupiditate ad quo autem. Asperiores cupiditate necessitatibus soluta
+                voluptatum labore consectetur perspiciatis! Nulla, reprehenderit.</p>
+        </div>
+    </div>
+</body>
+
+</html>
