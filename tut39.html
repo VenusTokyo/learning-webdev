@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grids</title>
+    <style>
+        .container{
+            display: grid;
+            /* this property makes the the container a 2d grind and the classes in it become grid items */
+            /* grid-template-columns: 300px 100px 100px; */
+            /* make 3 columns of 300px 100px and 100px */
+            /* grid-template-columns: 300px auto 100px ; */
+            grid-template-columns: 1fr 4fr 1fr;
+            /* dividing in 1 part 4 part 1 part of the screen  */
+            grid-template-columns: repeat(3,auto);
+            /* repat(no. of rows, size ) */
+            grid-gap: 2rem;
+            /* gap btw the columns  */
+
+
+        }
+        .item{
+            height: 100px;
+            border: 2px solid black;
+            /* width: 100px; */
+            background-color: red;
+            padding: 3px;
+            margin: 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is item1</div>
+        <div class="item">this is item2</div>
+        <div class="item">this is item3</div>
+        <div class="item">this is item4</div>
+        <div class="item">this is item5</div>
+        <div class="item">this is item6</div>
+        <div class="item">this is item7</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item9</div>
+    </div>
+</body>
+</html>
