@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid and media queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            
+
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        @media (max-width:500px) {
+            body {
+                display: block;
+                background-color: pink;
+            }
+            .container {
+                /* display: grid; */
+                /* grid-gap: 1rem; */
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    /* 'aside asiede aside aside' */
+                    'footer footer footer footer';
+
+            }
+            aside{
+                display: none;
+            }
+        }
+
+        @media (max-width:1000px) and (min-width:500px) {
+            body {
+                display: block;
+                background-color: rgb(176, 101, 247);
+
+            }
+
+            .container {
+                /* display: grid; */
+                /* grid-gap: 1rem; */
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+
+            }
+        }
+
+        @media (max-width:1500px) and (min-width:1000px) {
+            body {
+                display: block;
+                background-color: paleturquoise;
+            }
+            .container {
+                /* display: grid; */
+                /* grid-gap: 1rem; */
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+
+            }
+        }
+
+        @media (min-width:1500px) {
+            body {
+                display: block;
+                background-color: rgb(139, 255, 139);
+            }
+            .container{
+                grid-template-areas:
+                'nav nav nav nav'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+            }
+        }
+
+        .brd {
+            border: 2px solid black;
+            padding: 24px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="brd">
+            Home About Contact
+        </nav>
+        <section class="brd">
+            <h2>
+                Learn css in hindi
+            </h2>
+        </section>
+        <aside class="brd">
+            <h1>
+                More about us
+            </h1>
+        </aside>
+    </div>
+    <footer class="brd">
+        copyright hahah
+    </footer>
+</body>
+
+</html>
