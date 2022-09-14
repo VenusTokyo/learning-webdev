@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript strings and strings methords</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <div id="content">
+
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, omnis illo. Explicabo sint enim debitis
+            expedita commodi voluptate, excepturi officia asperiores dignissimos delectus, molestiae iste doloribus at
+            voluptas corporis quibusdam blanditiis odio esse soluta provident!</p>
+    </div>
+    <script>
+        var string = "this";
+        console.log(string);
+        var name = 'harry';
+        var channel = "code with harry"
+        var temp = `${name} is a nice person and has a youtube channel named ${channel}`;
+        // if we want to " in the string we surround the string by ' ' 
+        // string='thi"'; 
+        console.log(temp);
+        var len = name.length;
+        console.log(`length of name is ${len}`);
+        var s= new String("This")
+        console.log(s)
+
+        document.getElementById('content').innerHTML=`<h3>this is a h3 heading </h3>`
+
+
+    </script>
+</body>
+
+</html>
