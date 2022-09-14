@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript string functions</title>
+</head>
+
+<body>
+
+    <script>
+        var str = "this is a string"
+        console.log(str)
+
+
+        var position = str.indexOf('is');
+        // indexOf gives the first occurance of a string
+        console.log(position)
+
+        position = str.lastIndexOf('is')
+        // give last position of string
+        console.log(position)
+
+        // substring of a string
+        var substr = str.slice(1, 6);
+        // var substr =str.substring(1,6);
+        // both of the above can slice strings butr substring takes -ve values
+        substr1 = str.substr(1, 9);
+        console.log(substr1)
+
+        var replaced = str.replace('string', 'harry')
+        // replace does not change the original string
+        console.log(replaced)
+        console.log(replaced.toUpperCase())
+        console.log(replaced.toLocaleLowerCase())
+
+        var newstring = str.concat('newstring')
+        console.log(newstring)
+
+
+        var strwhitespace = "    this         gruwielgfuwe         dgswjh         ";
+        console.log(strwhitespace);
+        console.log(strwhitespace.trim());
+        // trim is to remove white spaces from front and end of strings
+
+        var char3 = str.charAt(2);
+        console.log(char3)
+
+console.log(str[1])
+    </script>
+</body>
+
+</html>
