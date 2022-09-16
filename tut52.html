@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and objects</title>
+</head>
+
+<body>
+    <div class="container">simple si html</div>
+
+    <script>
+        let myvar1 = 34;
+        let myvar2 = "string";
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined;
+
+        //an object (an object is also a king of array)
+        let employee = {
+            name: "harry",
+            salary: 2,
+            channel1: "codewithharry",
+            age: 34
+        }
+        console.log(employee)
+
+        //an array
+        let names = [1, 2, 3, "harry"];
+        console.log(names)
+
+        //another way defining array
+        let names2 = new Array(42,54,1, 2, 3, "harry");
+        console.log(names2)
+        names2=names2.sort()
+        console.log(names2)
+
+// adding element
+        names2.push("this is pushed")
+        console.log(names2)
+
+        
+    </script>
+</body>
+
+</html>
