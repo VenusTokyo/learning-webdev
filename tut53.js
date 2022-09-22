@@ -26,8 +26,20 @@ greet(name0,text)
 greet(name1)
 greet(name2,text)
 
+function greater(a,b)
+{
+    if(a>b){
+        return a;
+    }
+    else if(b>a)
+    {
+        return b;
+    }
+    else{
+        return "both equal"
+    }
+}
 
-
-
+console.log("the grester of the 2 no. is" + greater(9,9))
 
 
