@@ -19,3 +19,12 @@ clearTimeout(timeOut);
 setInterval(greet,1000,'huihui')
 //repeat after each interval
 //also returns id
+
+function displaytime(){
+    time = new Date();
+
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+}
+setInterval(displaytime, 1000);
+//funtion to display time
