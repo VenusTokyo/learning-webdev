@@ -12,3 +12,5 @@ let yr =newDate.getFullYear()
 console.log(yr)
 let a= newDate.getUTCDate()
 console.log(a)
+
+console.log(now.getHours())
