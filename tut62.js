@@ -15,5 +15,5 @@ console.log(myobj)
 
 newobj=JSON.parse(myobj)
 //this convert a json sting to object
-//this parse fn will not accept a normal string
+//this parse fn will not accept a normal string;
 console.log(newobj)
